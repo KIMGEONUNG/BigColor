@@ -134,8 +134,8 @@ The example codes are as follow.
 
 
 ### Acknowledgement
-The code of pretrained-BigGAN generator and discriminator are borrowed from
-a research [DGP](https://github.com/XingangPan/deep-generative-prior).
+The code of pretrained-BigGAN generator and discriminator and checkpoints are borrowed from
+a research: [DGP](https://github.com/XingangPan/deep-generative-prior).
 
 
 ### Citation
