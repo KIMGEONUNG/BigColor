@@ -138,7 +138,7 @@ The example codes are as follow.
 @inproceedings{Kim2022Bigcolor,
   title     = {BigColor: Colorization using a Generative Color Prior for Natural Images},
   author    = {Geonung Kim,Kyoungkook Kang,Seongtae Kim,Hwayoon Lee,Sehoon Kim,Jonghyun Kim,Seung-Hwan Baek,Sunghyun Cho},
-  booktitle = {Proc. ECCV},
+  booktitle = {European Conference on Computer Vision (ECCV)},
   year      = {2022}
 }
 
