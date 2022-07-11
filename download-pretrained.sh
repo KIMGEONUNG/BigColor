@@ -1,10 +1,8 @@
 #!/bin/bash
 
 # pretrained model for training
-config.pickle
-D_256.pth
-G_ema_256.pth
-vgg16.pickle
 
-# Test
-gdown "https://drive.google.com/uc?id=1Fb72nI-6XF3HBsSMLoOrD9Gh_tFrCAjO"
+gdown "1usoLZNnDzB3WLAphrGz5W2lJKxMMZJQw" -O pretrained/D_256.pth
+gdown "1qvxR2ZK5-gaLgtxem9fdLmfSKKvXF6eW" -O pretrained/config.pickle
+gdown "197ypWuWcwKI3Mrq11jbCWkk-r_-cj2tT" -O pretrained/G_ema_256.pth
+gdown "1evUHFmNJcFmqlS8YT_SjNfZV3dPjBgPL" -O pretrained/vgg16.pickle
