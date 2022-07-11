@@ -57,7 +57,7 @@ BigColor
 │       ├── args.pkl
 │       ├── EG_011.ckpt
 │       └── EG_EMA_011.ckpt
-├── pretrained/
+├── pretrained
 │   ├── config.pickle
 │   ├── D_256.pth
 │   ├── G_ema_256.pth
@@ -68,14 +68,19 @@ BigColor
 
 ### Datasets
 
-The validation set is not organized by class
-so we provide file.
+For training with ImageNet1K, you have to download ImageNet1K training and validation set.
+Unfortunately, the validation set is generally not organized for each class lables, that is, _all validation images stored in a directory_. 
+So, we provide a arranged validation files based on class lable. 
+Use this [link](https://drive.google.com/drive/folders/1nLzgE5WJnxp5WF1dkpa1ts6bZ6tVwtep?usp=sharing)
+and download the file: _imageNet_validation_grouping.zip_
+
+As a results, the final directory structure of the data is as follows
 
 ```
 tree structure
+
+...
 ```
-
-
 
 ### Colorization
 ![Teaser image 2](./srcs/teaser_2.png)
