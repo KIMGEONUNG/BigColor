@@ -18,7 +18,7 @@ We use python3.8 in _Ubuntu 20.04.2 LTS_ operation system as development environ
 We provide a anaconda environment file for running the code. 
 Run the instruction below on your bash prompt.
 
-```
+```bash
 conda env create -f environment.yml
 ```
 
@@ -28,20 +28,20 @@ The training for BigColor needs some pretrained models and configuration files.
 To automatically download the files, we provide a script requiring _gdown_.
 Therefore you should install _gdown_ using the script below.
 
-```
+```bash
 pip install gdown
 pip install --upgrade gdown
 ```
 
 After installing gdown, run the command below on your bash propmt for the prerequisite.  
 
-```
+```bash
 ./download-pretrained.sh
 ```
 
 If you want to get a pretrained BigColor checkpoint, also run the command below 
 
-```
+```bash
 ./download-bigcolor.sh
 ```
 
@@ -50,7 +50,7 @@ Then use this [link](https://drive.google.com/drive/folders/1nLzgE5WJnxp5WF1dkpa
 
 Finally, a structure of the files is as follows.
 
-```
+```bash
 BigColor
 ├── ckpts
 │   └── bigcolor
@@ -72,12 +72,23 @@ For training with ImageNet1K, you have to download ImageNet1K training and valid
 Unfortunately, the validation set is generally not organized for each class lables, that is, _all validation images stored in a directory_. 
 So, we provide a arranged validation files based on class lable. 
 Use this [link](https://drive.google.com/drive/folders/1nLzgE5WJnxp5WF1dkpa1ts6bZ6tVwtep?usp=sharing)
-and download the file: _imageNet_validation_grouping.zip_
+and download the file: _imageNet_validation_grouping.zip_.
+As a results, the final directory structure of the data is as follows.
 
-As a results, the final directory structure of the data is as follows
+```bash
+BigColor/imgnet/train/
+├── n01440764
+│   ├── n01440764_10026.JPEG
+│   ├── n01440764_10027.JPEG
+│   ├── n01440764_10029.JPEG
 
-```
-tree structure
+...
+
+BigColor/imgnet/val/
+├── n01440764
+│   ├── ILSVRC2012_val_00000293.JPEG
+│   ├── ILSVRC2012_val_00002138.JPEG
+│   ├── ILSVRC2012_val_00003014.JPEG
 
 ...
 ```
@@ -87,26 +98,37 @@ tree structure
 
 #### ImageNet1K Validation 
 
-inference results available in
+If you want to get the same inference results used in our paper,
+Use this [link](https://drive.google.com/drive/folders/1nLzgE5WJnxp5WF1dkpa1ts6bZ6tVwtep?usp=sharing)
+and download the file: _bigcolor_inference.zip_.
+Otherwise, run the code below.
+Note that the validation set should be structured based on the classes via directory.
 
-
-```
+```bash
 ./scripts/infer.bigcolor.e011.sh
 ```
 
 #### Real Gray Colorization
 
-```
+We provide a script for colorizing a real grayscale iamge with arbitrary resolution.
+The example code is as follow.
+
+```bash
 ./scripts/colorize.real.sh
 ```
 
 #### Multi-modal Solutions
 
-```
+We provide a script for testing the multiple solutions from a input.
+The example codes are as follow.
+
+```bash
+# using class vector c
 ./scripts/colorize.multi_c.sh
 ```
 
-```
+```bash
+# using random vector z
 ./scripts/colorize.multi_z.sh
 ```
 
