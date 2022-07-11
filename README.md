@@ -14,8 +14,9 @@ Abstract: *For realistic and vivid colorization, generative priors have recently
 ### Requirements
 
 ```
-
+conda env create -f environment.yml
 ```
+
 
 ### Pretrained Model
 
