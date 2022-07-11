@@ -15,7 +15,13 @@ https://....github.io/...<br>
 
 ### Inference
 
-### Test
+#### Inference Results
+
+#### ImageNet Validation Set
+
+#### Real Gray Colorization
+
+#### Multi-modal Solutions
 
 ### Citation
 
