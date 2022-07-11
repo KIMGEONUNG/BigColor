@@ -22,7 +22,7 @@ Run the instruction below on your bash prompt.
 conda env create -f environment.yml
 ```
 
-### Pretrained Model
+### Pretrained Models
 
 The training for BigColor needs some pretrained models and configuration files.
 To automatically download the files, we provide a script requiring _gdown_.
@@ -51,7 +51,19 @@ Then use this [link](https://drive.google.com/drive/folders/1nLzgE5WJnxp5WF1dkpa
 Finally, a structure of the files is as follows.
 
 ```
-tree structure
+BigColor
+├── ckpts
+│   └── bigcolor
+│       ├── args.pkl
+│       ├── EG_011.ckpt
+│       └── EG_EMA_011.ckpt
+├── pretrained/
+│   ├── config.pickle
+│   ├── D_256.pth
+│   ├── G_ema_256.pth
+│   └── vgg16.pickle
+
+...
 ```
 
 ### Datasets
