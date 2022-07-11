@@ -3,6 +3,8 @@
 Official PyTorch implementation of BigColor
 
 
+**Teaser**
+
 **BigColor**<br>
 Geonung Kim, Kyoungkook Kang, Seongtae Kim, Hwayoon Lee,<br>
 Sehoon Kim, Jonghyun Kim, Seung-Hwan Baek, Sunghyun Cho <br>
