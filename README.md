@@ -141,7 +141,7 @@ a research: [DGP](https://github.com/XingangPan/deep-generative-prior).
 ### Citation
 
 ```
-@inproceedings{Kim2022Bigcolor,
+@inproceedings{Kim2022BigColor,
   title     = {BigColor: Colorization using a Generative Color Prior for Natural Images},
   author    = {Geonung Kim,Kyoungkook Kang,Seongtae Kim,Hwayoon Lee,Sehoon Kim,Jonghyun Kim,Seung-Hwan Baek,Sunghyun Cho},
   booktitle = {European Conference on Computer Vision (ECCV)},
