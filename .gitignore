@@ -6,6 +6,13 @@ __pycache__/
 # C extensions
 *.so
 
+results
+results_multi_c
+results_multi_z
+results_real
+imgnet
+runs
+
 # Distribution / packaging
 .Python
 build/
