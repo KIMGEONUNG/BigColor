@@ -1,0 +1,24 @@
+build:
+  cuda: "11.0"
+  gpu: true
+  python_version: "3.8"
+  system_packages:
+    - "libgl1-mesa-glx"
+    - "libglib2.0-0"
+  python_packages:
+    - "numpy==1.21.5"
+    - "torch==1.10.1"
+    - "imageio==2.19.3"
+    - "opencv-python==4.5.5.64"
+    - "torch-ema==0.3"
+    - "timm==0.6.5"
+    - "tensorboard==2.9.1"
+    - "pyyaml==6.0"
+    - "tqdm==4.63.0"
+    - "scikit-image==0.19.3"
+    - "scipy==1.8.1"
+
+  run:
+   - mkdir -p /root/.cache/torch/hub/checkpoints/ && wget --output-document "/root/.cache/torch/hub/checkpoints/tf_efficientnet_l2_ns_475-bebbd00a.pth" "https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/tf_efficientnet_l2_ns_475-bebbd00a.pth"
+
+predict: "predict.py:Predictor"
